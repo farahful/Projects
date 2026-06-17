@@ -26,7 +26,6 @@ string getCardType(const string& cardNumber);
 
 int main() {
     bool running = true;
-
     while (running) {
         string input;
         cout << CYAN << "\n------ Credit Card Validator ------\n" << RESET;
@@ -43,6 +42,7 @@ int main() {
             cout << GREEN << "Card number is valid.\n" << RESET;
             cout << CYAN << "Card Type: " << getCardType(cardNumber) << RESET << endl;
         }
+        
         cout << YELLOW << "\nWould you like to enter another card number? (yes/no): " << RESET;
         string answer;
         getline(cin, answer);
@@ -55,7 +55,6 @@ int main() {
                 << RESET;
         }
     }
-
     return 0;
 }
 
